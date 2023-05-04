@@ -2,5 +2,5 @@
 
 public class MainViewModel : ViewModelBase
 {
-    public string Greeting => "Welcome to Avalonia!";
+    public string Greeting => "Generate a strong and randomized password instantly using the Lockgen application.";
 }
