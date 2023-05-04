@@ -7,6 +7,6 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UI.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="UI">
+        Title="LockGen - Say goodbye to weak passwords and hello to ultimate protection.">
         <views:MainView />
 </Window>
