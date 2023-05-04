@@ -6,15 +6,30 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="UI.Views.MainView"
              x:DataType="vm:MainViewModel">
-  <Design.DataContext>
-    <!-- This only sets the DataContext for the previewer in an IDE,
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-    <vm:MainViewModel />
-  </Design.DataContext>
+        <vm:MainViewModel />
+    </Design.DataContext>
 
-  <TextBlock Text="{Binding Greeting}" 
-             HorizontalAlignment="Center" 
-             VerticalAlignment="Center"
-             Margin="0,-200,0,0"
-  />
+    <Grid VerticalAlignment="Top" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+
+        <Image Source="/Assets/dummy_logo.png"
+               Stretch="Uniform"
+               Width="300"
+               Height="300"
+               Grid.Row="0"
+        />
+        
+        <TextBlock Text="{Binding Greeting}"
+                   FontSize="14"
+                   Margin="0,-30,0,0"
+                   Grid.Row="1"
+        />
+    </Grid>
 </UserControl>

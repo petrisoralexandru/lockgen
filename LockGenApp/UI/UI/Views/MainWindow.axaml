@@ -9,5 +9,5 @@
         Background="#003eba"
         Icon="/Assets/Lockgen.ico"
         Title="LockGen - Say goodbye to weak passwords and hello to ultimate protection.">
-        <views:MainView />
+    <views:MainView />
 </Window>
